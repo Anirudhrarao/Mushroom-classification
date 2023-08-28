@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mushroom Classification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1572197316318-2fb744caf405?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Keep the background fixed */
+        }
+        
+        div {
+            background-color: rgba(255, 255, 255, 0.1); /* Slightly increase transparency */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Increase the shadow */
+            padding: 20px; /* Increase padding */
+            margin: 20px auto;
+            max-width: 500px; /* Increase the maximum width */
+        }
+        
+        /* Style the form container */
+        form {
+            text-align: left; /* Align form elements to the left */
+        }
+        
+        /* Style the labels */
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        /* Style the select boxes */
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            background-color: #f5f5f5;
+        }
+        
+        /* Style the submit button */
+        input[type="submit"] {
+            background-color: #004bfa;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Add a smooth transition */
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #0030a5; /* Darker blue on hover */
+        }
+        
+        /* Style the headings */
+        h1 {
+            color: #004bfa;
+            text-align: center;
+            font-size: 28px; /* Increase font size */
+            margin-bottom: 20px; /* Add some spacing below the heading */
+        }
+        
+        h3 {
+            text-align: center;
+            color: white;
+            font-size: 18px; /* Increase font size */
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div>
+        <!-- <h1>Mushroom Classification</h1> -->
+        <form action="{{ url_for('predict_data_point') }}" method="post">
+            <!-- <center><p><strong>Problem Statement: </strong>Predict the mushroom is edible or poisonous</p></center> -->
+            <h3>The Mushroom is {{ results }}</h3>                 
+
+            <label for="bruises">Bruises:</label>
+            <select name="bruises" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="gill-spacing">Gill Spacing:</label>
+            <select name="gill-spacing">
+                <option value="close">Close</option>
+                <option value="crowded">Crowded</option>
+            </select>
+
+            <label for="gill-size">Gill Size:</label>
+            <select name="gill-size">
+                <option value="narrow">Narrow</option>
+                <option value="broad">Broad</option>
+            </select>
+
+            <label for="gill-color">Gill Color:</label>
+            <select name="gill-color">
+                <option value="black">Black</option>
+                <option value="brown">Brown</option>
+                <option value="gray">Gray</option>
+                <option value="pink">Pink</option>
+                <option value="white">White</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="purple">Purple</option>
+                <option value="red">Red</option>
+                <option value="buff">Buff</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="orange">Orange</option>
+            </select>
+
+            <label for="stalk-root">Stalk Root:</label>
+            <select name="stalk-root">
+                <option value="equal">Equal</option>
+                <option value="club">Club</option>
+                <option value="bulbous">Bulbous</option>
+                <option value="rooted">Rooted</option>
+            </select>
+
+            <label for="ring-type">Ring Type:</label>
+            <select name="ring-type">
+                <option value="pendant">Pendant</option>
+                <option value="evanescent">Evanescent</option>
+                <option value="large">Large</option>
+                <option value="flaring">Flaring</option>
+                <option value="none">None</option>
+            </select>
+
+            <label for="spore-print-color">Spore Print Color:</label>
+            <select name="spore-print-color">
+                <option value="black">Black</option>
+                <option value="brown">Brown</option>
+                <option value="white">White</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="purple">Purple</option>
+                <option value="buff">Buff</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="orange">Orange</option>
+            </select>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>    
+</body>
+</html>
