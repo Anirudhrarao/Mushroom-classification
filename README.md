@@ -11,6 +11,7 @@ This repository contains a machine learning project that classifies mushrooms as
 - [Data](#data)
 - [Models](#models)
 - [Results](#results)
+- [Demo](#screenshot)
 
 ## Project Structure
 ```bash
@@ -77,6 +78,20 @@ To set up this project on your local machine, follow these steps:
     ```
 ## Results
 The XGBoost Classifier achieved the ``highest accuracy`` in classifying mushrooms as edible or poisonous.
+
+## Screenshots
+
+Here are some screenshots from the mushroom classification project:
+
+1. **Screenshot 1:** (Description of the screenshot)
+   ![Screenshot 1](screenshots/screenshot1.png)
+
+2. **Screenshot 2:** (Description of the screenshot)
+   ![Screenshot 2](screenshots/screenshot2.png)
+
+3. **Screenshot 3:** (Description of the screenshot)
+   ![Screenshot 3](screenshots/screenshot3.png)
+
 
 
 
