@@ -83,14 +83,12 @@ The XGBoost Classifier achieved the ``highest accuracy`` in classifying mushroom
 
 Here are some screenshots from the mushroom classification project:
 
-1. **Screenshot 1:** (Description of the screenshot)
-   ![Screenshot 1](screenshots/screenshot1.png)
+1. **Screenshot 1:**
+   ![Screenshot 1](https://raw.githubusercontent.com/Anirudhrarao/Mushroom-classification/main/screenshot/Screenshot%202023-08-30%20090028.png)
 
-2. **Screenshot 2:** (Description of the screenshot)
-   ![Screenshot 2](screenshots/screenshot2.png)
+2. **Screenshot 2:** 
+   ![Screenshot 2](https://raw.githubusercontent.com/Anirudhrarao/Mushroom-classification/main/screenshot/Screenshot%202023-08-30%20090102.png)
 
-3. **Screenshot 3:** (Description of the screenshot)
-   ![Screenshot 3](screenshots/screenshot3.png)
 
 
 
